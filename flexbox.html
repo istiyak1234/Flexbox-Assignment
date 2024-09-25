@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box in CSS</title>
+    <style>
+        .heading{
+            text-align: center;
+            color: #153636;
+        }
+        .card-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items:flex-start;
+            justify-content: center;
+            
+        }
+        .card-gallery img{
+            margin: 10px;
+            border: 2px solid blueviolet;
+            /* width: 250px; */
+            /* height: 250px; */
+            /* border-radius: 250px; */
+            max-width: 250px;
+            
+            
+            
+            
+        }
+        
+        .card{
+            max-width: 250px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid #fa5bfa;
+
+        }
+        .card img{
+            width: 100%;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+            color: #050575;
+        }
+        .educator{
+            font-size: 13px;
+            font-weight: lighter;
+        }
+        .price{
+            font-weight: bolder;
+        }
+        .subtitle{
+            text-align: center;
+            margin-top: 0px;
+            font-size: 18px;
+            color: rgb(87, 87, 87);
+        }
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+   <h1 class="heading">Image Gallery </h1>
+   <main class="card-gallery">
+    <img src="https://www.quackit.com/pix/samples/2m.jpg" alt="Photo 1" />
+      <img src="https://www.quackit.com/pix/samples/4m.jpg" alt="Photo 2" />
+      <img src="https://www.quackit.com/pix/samples/27m.jpg" alt="Photo 3" />
+      <img src="https://www.quackit.com/pix/samples/28m.jpg" alt="Photo 4" />
+      <img src="https://www.quackit.com/pix/samples/29m.jpg" alt="Photo 5" />
+      <img src="https://www.quackit.com/pix/samples/30m.jpg" alt="Photo 6" />
+      <img src="https://www.quackit.com/pix/samples/32m.jpg" alt="Photo 7" />
+      <img src="https://www.quackit.com/pix/samples/31m.jpg" alt="Photo 8" />
+      <img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Photo 9" />
+      <img src="https://www.quackit.com/pix/samples/22m.jpg" alt="Photo 10" />
+      <img src="https://www.quackit.com/pix/samples/3m.jpg" alt="Photo 11" />
+      <img src="https://www.quackit.com/pix/samples/23m.jpg" alt="Photo 12" />
+   </main>
+   <h1 class="heading">Community Program</h1>
+   <p class="subtitle">Open to all Pro Live classes on Youtube For Free</p>
+   <div class="card-container">
+    <div class="card">
+        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.jpg" alt="Course01">
+        <p class="title">Masterclass Understanding APIs in Web Development with RoadMap</p>
+        <p class="educator">Hitesh Choudhary</p>
+        <p class="price">FREE</p>
+    </div>
+    <div class="card">
+        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6463025b6977cc64d3ddf8b7.jpg" alt="Course01">
+        <p class="title">Masterclass Understanding APIs in Web Development with RoadMap</p>
+        <p class="educator">Vishwa Mohan</p>
+        <p class="price">FREE</p>
+    </div>
+    <div class="card">
+        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.jpg" alt="Course01">
+        <p class="title">Masterclass Understanding APIs in Web Development with RoadMap</p>
+        <p class="educator">Priya Bhatia</p>
+        <p class="price">FREE</p>
+    </div>
+   </div>
+</body>
+</html>
